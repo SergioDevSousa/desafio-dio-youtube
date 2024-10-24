@@ -1,0 +1,256 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+/* Estilo do header */
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Estilo da navegação (menu + logo) */
+.container-nav {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown svg {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none; /* Oculte o menu dropdown inicialmente */
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo do logotipo */
+picture img {
+    margin-left: 10px;
+}
+
+/* Estilo da barra de pesquisa */
+/* Estilização do contêiner da barra de pesquisa */
+.searchbox {
+    display: flex; /* Flexbox para alinhar os itens na mesma linha */
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Definir largura máxima da barra de pesquisa */
+    margin: 0 auto; /* Centraliza a barra de pesquisa */
+}
+.label-search{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Campo de texto da pesquisa */
+.input-search {
+    flex-grow: 1; /* O campo de texto ocupa o máximo de espaço disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Arredonda apenas o lado esquerdo */
+    font-size: 16px;
+    outline: none;
+    width: 404px;
+    height: 40px;
+}
+
+/* Botão de pesquisa */
+.btn-search {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove a borda esquerda para fundir com o campo de pesquisa */
+    border-radius: 0 4px 4px 0; /* Arredonda o lado direito */
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 40px;
+}
+
+/* Tamanho do ícone de lupa */
+.btn-search svg {
+    fill: #5f6368;
+}
+
+.btn-search:hover svg {
+    fill: #000;
+}
+
+
+/* Estilo da área de perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil picture img {
+    margin-left: 20px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+/* Estilo responsivo */
+/* @media (max-width: 768px) {
+    .searchbox {
+        max-width: 300px;
+        margin: 0 10px;
+    }
+
+    .perfil picture img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+} */
+/* style main */
+.content-main{
+    display: flex;
+    flex-direction: row;
+}
+.video-principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.video-principal h3{
+    font-size: 16px;
+    padding: 20px 0 20px 0;
+}
+.video-principal img{
+    width: 850px;
+    height: auto;
+    padding-bottom: 20px;
+}
+.video-principal p{
+    font-size: 14px;
+    width: 50%;
+}
+.video-principal iframe{
+    width: 852px;
+    height: 537px;
+}
+.btn-description{
+    display: flex;
+    flex-direction: column;
+}
+
+/* style do thumbnail */
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    padding: 20px 0 0px 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail-image {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+/* Botão de Play */
+.play-button-overlay {
+    position: absolute;
+    top: 45%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button-overlay svg {
+    fill: white;
+    opacity: 0.8;
+}
+
+.play-button-overlay:hover svg {
+    opacity: 1;
+}
+
+/* Informações da thumbnail */
+.description-thambnail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.description-thambnail h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.description-thambnail p {
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.metadata-thambnail {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.metadata-thambnail p {
+    font-size: 12px;
+    color: #5e5c5c;
+}
+
+
+

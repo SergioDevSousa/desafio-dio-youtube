@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>YouTube</title>
+</head>
+<body>
+    <header class="container-header">
+        <nav class="container-nav">
+            <div class="dropdown">
+                <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                <picture>
+                    <img src="./assets/image/youtube 1.png" alt="logo youtube" width="90" height="20"/>
+                </picture>
+            </div>
+        </nav>
+            <form id="search-form" action="/results" class="searchbox">
+                <label for="busca" class="label-search">
+                    <!-- Campo de texto para pesquisa -->
+                    <input class="input-search" type="text" name="query" placeholder="Pesquisar" id="busca" width="415">
+                    <!-- Botão de busca com o ícone de lupa -->
+                    <button class="btn-search" type="submit" id="search" aria-label="Pesquisar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    </button>
+                </label>
+            </form>
+            <div class="perfil">
+                <picture>
+                    <img src="./assets/image/video.png" alt="desenho do video"/>
+                    <img src="./assets/image/notifications_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="desenho do sino"/>
+                    <img src="./assets/image/Avatar.png" alt="avatar do usuario"/>
+                </picture>
+            </div>
+    </header>
+    <main class="content-main">
+        <section>
+            <div class="video-principal">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A4FqRmn22i4?si=hY_SdAQr-xlH9pqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h2>
+                    <img src="./assets/image/Video Actions.png" alt="imagens action main"/>
+                    <h3>28.418 visualizações Transmitido ao vivo em 23 agosto de 2022.</h3>
+                    <p>Inicie uma aventura imeresiva no mundo do ront-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um thme switcher (light e dark) para explirarmos os mistérios do mundo invertido. </p>
+            </div>
+        </section>
+        <section>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/live/Md5t4eOwvX4?si=JWe3bN-aFc82whfa" target="_blank">
+                    <img src="https://i.ytimg.com/vi_webp/Md5t4eOwvX4/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image">
+                </a>
+                <div class="play-button-overlay">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </div>
+                <div class="description-thambnail">
+                    <h3>Como se Preparar para sua Primeira Certificação Azure</h3>
+                    <p><b>DigitalInnovationOne</b></p>
+                    <div class="metadata-thambnail">
+                        <p>2,1 mil visualizações</p>
+                        <p>Transmitido há 3 semanas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/watch?v=beW0jV6LU7I" target="_blank"><img src="https://i.ytimg.com/vi_webp/beW0jV6LU7I/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Lançamento Santander Bootcamp Cibersegurança #2</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/watch?v=QP3OuZ3OXu0" target="_blank"><img src="https://i.ytimg.com/vi_webp/QP3OuZ3OXu0/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Desenvolvendo um Filtro de Moderação de Conteúdo com Python Utilizando as APIs do Twitter e OpenAI</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://youtu.be/xtbbbFMINaA" target="_blank"><img src="https://i.ytimg.com/vi_webp/xtbbbFMINaA/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Torne-se um especialista em Kubernetes</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/watch?v=A4FqRmn22i4" target="_blank"><img src="https://i.ytimg.com/vi_webp/A4FqRmn22i4/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Lançamento Bootcamp Microsoft - Azure Advanced</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/watch?v=rS5wg5PQ8Us" target="_blank"><img src="https://i.ytimg.com/vi_webp/rS5wg5PQ8Us/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>A Importância da Lógica no Dia a Dia de Profissionais de Tecnologia</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/watch?v=B6_os-gK7F0" target="_blank"><img src="https://i.ytimg.com/vi/B6_os-gK7F0/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhYIEooZTAP&rs=AOn4CLCJVb3b6P6rm3G7nfBpnmIhJM33sg" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Conheça o canal da Dio</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/watch?v=CMSdc9z4pzQ" target="_blank"><img src="https://i.ytimg.com/vi_webp/CMSdc9z4pzQ/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Utilizando Spark e Python com PySpark para Análise de Dados</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="video-thumbnail">
+                <a href="https://www.youtube.com/live/Md5t4eOwvX4?si=JWe3bN-aFc82whfa" target="_blank"><img src="https://i.ytimg.com/vi_webp/5KVa0TqxD04/mqdefault.webp" alt="Thumbnail do vídeo do YouTube" class="thumbnail-image"></a>
+                    <div class="play-button-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25" height="25">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="description-thambnail">
+                            <h3>Como se Preparar para sua Primeira Certificação Azure</h3>
+                            <p><b>DigitalInnovationOne</b></p>
+                        <div class="metadata-thambnail">
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido à 3 semanas</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
