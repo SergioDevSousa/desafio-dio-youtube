@@ -1,16 +1,14 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #000;
 }
 
-/* Estilo do header */
 .container-header {
     display: flex;
     align-items: center;
@@ -23,7 +21,6 @@ body {
     z-index: 10;
 }
 
-/* Estilo da navegação (menu + logo) */
 .container-nav {
     display: flex;
     align-items: center;
@@ -36,11 +33,11 @@ body {
 
 .dropdown svg {
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .dropdown-content {
-    display: none; /* Oculte o menu dropdown inicialmente */
+    display: none;
     position: absolute;
     top: 50px;
     left: 10px;
@@ -56,48 +53,44 @@ body {
     color: #333;
     text-decoration: none;
 }
-
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-/* Estilo do logotipo */
 picture img {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
-/* Estilo da barra de pesquisa */
-/* Estilização do contêiner da barra de pesquisa */
 .searchbox {
-    display: flex; /* Flexbox para alinhar os itens na mesma linha */
+    display: flex; 
     align-items: center;
     width: 100%;
-    max-width: 500px; /* Definir largura máxima da barra de pesquisa */
-    margin: 0 auto; /* Centraliza a barra de pesquisa */
+    max-width: 50rem; 
+    margin: 0 auto; 
 }
 .label-search{
     display: flex;
     flex-direction: row;
 }
 
-/* Campo de texto da pesquisa */
+
 .input-search {
-    flex-grow: 1; /* O campo de texto ocupa o máximo de espaço disponível */
-    padding: 10px;
+    flex-grow: 1; 
+    padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px; /* Arredonda apenas o lado esquerdo */
-    font-size: 16px;
+    border-radius: 4px 0 0 4px; 
+    font-size: 1.6rem;
     outline: none;
-    width: 404px;
-    height: 40px;
+    width: 40.4rem;
+    height: auto;
 }
 
-/* Botão de pesquisa */
+
 .btn-search {
     background-color: #f1f1f1;
     border: 1px solid #ccc;
-    border-left: none; /* Remove a borda esquerda para fundir com o campo de pesquisa */
-    border-radius: 0 4px 4px 0; /* Arredonda o lado direito */
+    border-left: none; 
+    border-radius: 0 4px 4px 0; 
     padding: 10px;
     cursor: pointer;
     display: flex;
@@ -107,7 +100,6 @@ picture img {
     height: 40px;
 }
 
-/* Tamanho do ícone de lupa */
 .btn-search svg {
     fill: #5f6368;
 }
@@ -116,8 +108,6 @@ picture img {
     fill: #000;
 }
 
-
-/* Estilo da área de perfil */
 .perfil {
     display: flex;
     align-items: center;
@@ -130,20 +120,6 @@ picture img {
     cursor: pointer;
 }
 
-/* Estilo responsivo */
-/* @media (max-width: 768px) {
-    .searchbox {
-        max-width: 300px;
-        margin: 0 10px;
-    }
-
-    .perfil picture img {
-        width: 20px;
-        height: 20px;
-        margin-left: 10px;
-    }
-} */
-/* style main */
 .content-main{
     display: flex;
     flex-direction: row;
@@ -153,38 +129,36 @@ picture img {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 2rem;
 }
 .video-principal h3{
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 20px 0 20px 0;
 }
 .video-principal img{
-    width: 850px;
+    width: 85rem;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 .video-principal p{
-    font-size: 14px;
-    width: 50%;
+    font-size: 1.4rem;
 }
 .video-principal iframe{
-    width: 852px;
-    height: 537px;
+    width: 100%;
+    height: 53.7rem;
 }
 .btn-description{
     display: flex;
     flex-direction: column;
 }
 
-/* style do thumbnail */
 .video-thumbnail {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 1rem;
     padding: 20px 0 0px 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -195,13 +169,12 @@ picture img {
 }
 
 .thumbnail-image {
-    width: 250px;
+    width: 25rem;
     height: auto;
     object-fit: cover;
     transition: all 0.3s ease;
 }
 
-/* Botão de Play */
 .play-button-overlay {
     position: absolute;
     top: 45%;
@@ -224,7 +197,7 @@ picture img {
     opacity: 1;
 }
 
-/* Informações da thumbnail */
+
 .description-thambnail {
     display: flex;
     flex-direction: column;
@@ -232,23 +205,23 @@ picture img {
 }
 
 .description-thambnail h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-bottom: 5px;
 }
 
 .description-thambnail p {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin: 2px 0;
 }
 
 .metadata-thambnail {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .metadata-thambnail p {
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #5e5c5c;
 }
 
